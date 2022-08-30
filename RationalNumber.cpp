@@ -14,7 +14,7 @@ using namespace std;
 RationalNumber::RationalNumber(int n, int d)
     :numerator(n),
     denominator(d != 0 ? d :
-        throw invalid_argument("denominator must be great than 0"))
+        throw invalid_argument("denominator must not be 0"))
 {
     setFractions(n, d);
 }
